@@ -1,0 +1,27 @@
+.our-services-card-height{
+    height: 420px;
+}
+.owl-carousel.owl-carousel-partners img{
+    width: 60%;
+}
+.about-us-img{
+    width: 100%;
+    height: 100%;
+}
+.our-work-text-color{
+    color: grey;
+}
+.block-for-mobile{
+    display: none;
+}
+.block-for-web{
+    display: block;
+}
+@media (max-width: 991px) {
+	.block-for-mobile{
+        display: block;
+    }
+    .block-for-web{
+        display: none;
+    }
+  }

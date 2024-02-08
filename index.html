@@ -44,35 +44,38 @@
 								</div>
 							</div>
 						</div>
-						<div class="header-column justify-content-end">
+						<div class="header-column justify-content-end me-4">
 							<div class="header-row">
-								<div
+								<div id="nav-header-center"
 									class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
 									<div
 										class="header-nav-main header-nav-main-font-lg header-nav-main-font-lg-upper-2 header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
 										<nav class="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li class="dropdown">
-													<a data-hash class="nav-link active" href="#home">
+													<a key="home" data-hash class="lang nav-link active" href="#home">
 														Главная
 													</a>
 
 												</li>
 												<li>
-													<a class="nav-link" data-hash data-hash-offset="0"
+													<a key="about" class="lang nav-link" data-hash data-hash-offset="0"
 														data-hash-offset-lg="68" href="#about-us">О нас</a>
 												</li>
 												<li>
-													<a class="nav-link" data-hash data-hash-offset="0"
-														data-hash-offset-lg="68" href="#services">Услуги</a>
+													<a key="services" class="lang nav-link" data-hash
+														data-hash-offset="0" data-hash-offset-lg="68"
+														href="#services">Услуги</a>
 												</li>
 												<li>
-													<a class="nav-link" data-hash data-hash-offset="0"
-														data-hash-offset-lg="68" href="#projects">Проекты</a>
+													<a key="projects" class="lang nav-link" data-hash
+														data-hash-offset="0" data-hash-offset-lg="68"
+														href="#projects">Проекты</a>
 												</li>
 												<li>
-													<a class="nav-link" data-hash data-hash-offset="0"
-														data-hash-offset-lg="68" href="#contact">Контакты</a>
+													<a key="contacts" class="lang nav-link" data-hash
+														data-hash-offset="0" data-hash-offset-lg="68"
+														href="#contact">Контакты</a>
 												</li>
 											</ul>
 										</nav>
@@ -82,6 +85,29 @@
 										<i class="fas fa-bars"></i>
 									</button>
 								</div>
+							</div>
+						</div>
+						<div id="nav-language" class="header-column justify-content-end me-4">
+							<div class="header-row">
+								<nav>
+									<ul class="nav" id="mainNav">
+										<li>
+											<a class="translate" id="ru"> <span onclick="changeLang('ru');"><img
+														src="images/ru.png" alt="ru-flag"></span></a>
+										</li>
+
+										<li class="mx-2">
+											<a class="translate" id="tm"> <span onclick="changeLang('tm');"><img
+														src="images/tm.png" alt="tm-flag"></span></a>
+										</li>
+
+										<li>
+											<a class="translate" id="en"> <span onclick="changeLang('en');"><img
+														src="images/en.png" alt="en-flag"></span></a>
+										</li>
+
+									</ul>
+								</nav>
 							</div>
 						</div>
 					</div>
@@ -101,9 +127,10 @@
 							style="background-image: url(images/main1.jpg); background-size: cover; background-position: center;">
 							<div class="container position-relative z-index-3 h-100">
 								<div class="row justify-content-center align-items-center h-100">
-									<div class="col-lg-6">
+									<div class="col-lg-8">
 										<div class="d-flex flex-column align-items-center">
-											<h3 class="position-relative text-color-light text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+											<h3 key="main_toptitle1"
+												class="lang position-relative text-color-light text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
 												data-appear-animation="fadeInDownShorterPlus"
 												data-plugin-options="{'minWindowWidth': 0}">
 												<span
@@ -124,11 +151,13 @@
 														data-plugin-options="{'minWindowWidth': 0}" alt="" />
 												</span>
 											</h3>
-											<h2 class="main-big-title text-color-light font-weight-extra-bold mb-3"
+											<h2 key="main_title1"
+												class="lang main-big-title text-color-light font-weight-extra-bold mb-3"
 												data-plugin-animated-letters
 												data-plugin-options="{'startDelay': 20, 'minWindowWidth': 0, 'animationSpeed': 30, 'animationName': 'fadeInRightShorterOpacity', 'letterClass': 'd-inline-block'}">
 												TÜRKMEN&nbsp;DEŇIZ&nbsp;HYZMATLARY</h2>
-											<p class="text-4 text-color-light font-weight-light text-center mb-0"
+											<p key="main_subtitle1"
+												class="lang text-4 text-color-light font-weight-light text-center mb-0"
 												data-plugin-animated-letters
 												data-plugin-options="{'startDelay': 400, 'animationSpeed': 30, 'minWindowWidth': 0}">
 												В нашей
@@ -145,9 +174,10 @@
 							style="background-image: url(images/main2.jpg); background-size: cover; background-position: center;">
 							<div class="container position-relative z-index-3 h-100">
 								<div class="row justify-content-center align-items-center h-100">
-									<div class="col-lg-6">
+									<div class="col-lg-8">
 										<div class="d-flex flex-column align-items-center">
-											<h3 class="position-relative text-color-light text-5 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+											<h3 key="main_toptitle2"
+												class="lang position-relative text-color-light text-5 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
 												data-appear-animation="fadeInDownShorterPlus"
 												data-plugin-options="{'minWindowWidth': 0}">
 												<span
@@ -168,11 +198,13 @@
 														data-plugin-options="{'minWindowWidth': 0}" alt="" />
 												</span>
 											</h3>
-											<h2 class="text-color-light font-weight-extra-bold text-7 mb-3 appear-animation"
+											<h2 key="main_title2"
+												class="lang text-color-light font-weight-extra-bold text-7 mb-3 appear-animation"
 												data-appear-animation="blurIn" data-appear-animation-delay="500"
 												data-plugin-options="{'minWindowWidth': 0}">РАЗВИТИЕ В МОРСКОЙ ИНДУСТРИИ
 											</h2>
-											<p class="text-4 text-color-light font-weight-light opacity-7 text-center mb-0"
+											<p key="main_subtitle2"
+												class="lang text-4 text-color-light font-weight-light opacity-7 text-center mb-0"
 												data-plugin-animated-letters
 												data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 25}">
 												<strong class="text-color-light">Наша Компания</strong>
@@ -206,18 +238,19 @@
 					<div class="row py-4 mb-2">
 						<div class="col-md-7 order-2">
 							<div class="overflow-hidden">
-								<h2 class="text-color-dark font-weight-bold text-12 mb-4 pt-0 mt-0 appear-animation"
+								<h2 key="about"
+									class="lang text-color-dark font-weight-bold text-12 mb-4 pt-0 mt-0 appear-animation"
 									data-appear-animation="maskUp" data-appear-animation-delay="300">О нас</h2>
 							</div>
-							<p class="lead appear-animation" data-appear-animation="fadeInUpShorter"
+							<p key="about_p1" class="lang lead appear-animation" data-appear-animation="fadeInUpShorter"
 								data-appear-animation-delay="700">Мы содействуем развитию морской транспортной
 								инфраструктуры Туркменистана и повышению конкурентоспособности туркменских морских
 								портов путем эффективной эксплуатации, содержания и развития закрепленного за
 								предприятием имущества в морских портах. </p>
-							<p class="lead appear-animation" data-appear-animation="fadeInUpShorter"
+							<p key="about_p2" class="lang lead appear-animation" data-appear-animation="fadeInUpShorter"
 								data-appear-animation-delay="700">Принимаем активное участие в реализации
 								государственных программ в области развития морского транспорта Туркменистана.</p>
-							<p class="lead appear-animation" data-appear-animation="fadeInUpShorter"
+							<p key="about_p3" class="lang lead appear-animation" data-appear-animation="fadeInUpShorter"
 								data-appear-animation-delay="700">Оказываем услуги по обеспечению безопасности
 								мореплавания.</p>
 
@@ -240,7 +273,8 @@
 						<div class="row pb-5 mb-4">
 							<div class="col text-center">
 
-								<h2 class="text-transform-none text-color-light font-weight-bold text-10 negative-ls-1 mb-0 appear-animation"
+								<h2 key="our_services"
+									class="lang text-transform-none text-color-light font-weight-bold text-10 negative-ls-1 mb-0 appear-animation"
 									data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="400">Наши
 									Услуги</h2>
 							</div>
@@ -258,10 +292,11 @@
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
 								<img src="images/services/1.png" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center px-3 pt-4 pb-1">
-									<h2
-										class="card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
+									<h2 key="service_card_title1"
+										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
 										Судовое снабжение</h2>
-									<p class="font-weight-light text-color-dark line-height-7 mb-0">Наша компания
+									<p key="service_card_subtitle1"
+										class="lang font-weight-light text-color-dark line-height-7 mb-0">Наша компания
 										занимается поставкой судового оборудования и запчастей, необходимых для
 										исправной работы всех судовых устройств и механизмов. </p>
 								</div>
@@ -274,10 +309,11 @@
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
 								<img src="images/services/2.png" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center pt-4 pb-1">
-									<h2
-										class="card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
+									<h2 key="service_card_title2"
+										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
 										Судоремонт</h2>
-									<p class="font-weight-light text-color-dark line-height-7 mb-0">Осуществляем
+									<p key="service_card_subtitle2"
+										class="lang font-weight-light text-color-dark line-height-7 mb-0">Осуществляем
 										сервисное обслуживание, выполняем профессиональный ремонт устройств и комплексов
 										корабля. Ремонт судовых дизельных двигателей, механизмов и других узлов.</p>
 								</div>
@@ -290,10 +326,12 @@
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
 								<img src="images/services/3.png" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center pt-4 pb-1">
-									<h2
-										class="card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
+									<h2 key="service_card_title3"
+										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
 										Дноуглубительные работы</h2>
-									<p class="font-weight-light text-color-dark line-height-7 mb-0">Улучшают условия
+									<p key="service_card_subtitle3"
+										class="lang font-weight-light text-color-dark line-height-7 mb-0">Улучшают
+										условия
 										судового хода, подходов к портам и причалам, удаления донных отложений, а также
 										регулирования параметров русла водоемов путем изъятия подводного грунта.</p>
 								</div>
@@ -306,10 +344,12 @@
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
 								<img src="images/services/4.png" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center pt-4 pb-1">
-									<h2
-										class="card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
+									<h2 key="service_card_title4"
+										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
 										Предоставление судов</h2>
-									<p class="font-weight-light text-color-dark line-height-7 mb-0">Мы оказываем услугу
+									<p key="service_card_subtitle4"
+										class="lang font-weight-light text-color-dark line-height-7 mb-0">Мы оказываем
+										услугу
 										по предоставлению различных видов судов для различных целей. Такие как,
 										буксирные суда, суда снабжения, якоря заводчики и многое другое.</p>
 								</div>
@@ -322,10 +362,11 @@
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
 								<img src="images/services/5.png" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center pt-4 pb-1">
-									<h2
-										class="card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
+									<h2 key="service_card_title5"
+										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
 										Агентирование</h2>
-									<p class="font-weight-light text-color-dark line-height-7 mb-0">Морское
+									<p key="service_card_subtitle5"
+										class="lang font-weight-light text-color-dark line-height-7 mb-0">Морское
 										агентирование судов- это комплекс услуг
 										в которые входят услуги
 										по буксировке, ремонту
@@ -341,10 +382,12 @@
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
 								<img src="images/services/6.png" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center pt-4 pb-1">
-									<h2
-										class="card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
+									<h2 key="service_card_title6"
+										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
 										Консультация</h2>
-									<p class="font-weight-light text-color-dark line-height-7 mb-0">Специалисты нашей
+									<p key="service_card_subtitle6"
+										class="lang font-weight-light text-color-dark line-height-7 mb-0">Специалисты
+										нашей
 										компании помогут вам по всем вопросам в морской деятельности. Также помогут
 										провести анализ, найти все слабые места и составить эффективный план действий.
 									</p>
@@ -369,27 +412,27 @@
 								<div data-plugin-sticky
 									data-plugin-options="{'minWidth': 991, 'containerSelector': '.sticky-container', 'padding': {'top': 100}}">
 									<div class="py-5 my-2 ps-5 pe-0">
-										<h4 class="text-color-light custom-text-10 font-weight-bold">
+										<h4 key="" class="lang text-color-light custom-text-10 font-weight-bold">
 											Наши проекты</h4>
 										<ul class="list-unstyled sort-source" data-sort-id="portfolio"
 											data-option-key="filter">
 											<li class="nav-item active" data-option-value="*">
 												<a href="#ourWork" data-hash data-hash-offset="0"
-													data-hash-offset-lg="100"
-													class="our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Все
+													data-hash-offset-lg="100" key="projects_nav_see_all"
+													class="lang our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Все
 													проекты</a>
 											</li>
 											<li class="nav-item" data-option-value=".mechanical-electrical-works">
 												<a href="#ourWork" data-hash data-hash-offset="0"
-													data-hash-offset-lg="100"
-													class="our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Механические
+													data-hash-offset-lg="100" key="projects_nav_mechanical"
+													class="lang our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Механические
 													и электрические работы</a>
 											</li>
 
 											<li class="nav-item" data-option-value=".major-renovation">
 												<a href="#ourWork" data-hash data-hash-offset="0"
-													data-hash-offset-lg="100"
-													class="our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Капитальный
+													data-hash-offset-lg="100" key="projects_nav_overhaul"
+													class="lang our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Капитальный
 													ремонт</a>
 											</li>
 
@@ -407,11 +450,11 @@
 										<div
 											class="w-100 custom-our-work-text px-5 py-2 d-flex align-items-end p-absolute bottom-0">
 											<div class="text-start p-relative z-index-2 mb-3">
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
+												<h4 key="projects_title_item1"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
 													Механические и электрические работы</h4>
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
+												<h4 key="projects_subtitle_item1"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
 													на теплоходе “MAGTYMGULY”</h4>
 
 											</div>
@@ -427,11 +470,11 @@
 										<div
 											class="w-100 custom-our-work-text px-5 py-2 d-flex align-items-end p-absolute bottom-0">
 											<div class="text-start p-relative z-index-2 mb-3">
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
+												<h4 key="projects_title_item2"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
 													Механические и электрические работы</h4>
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
+												<h4 key="projects_subtitle_item2"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
 													на мототанкере “ETREK”</h4>
 
 											</div>
@@ -447,11 +490,11 @@
 										<div
 											class="w-100 custom-our-work-text px-5 py-2 d-flex align-items-end p-absolute bottom-0">
 											<div class="text-start p-relative z-index-2 mb-3">
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
+												<h4 key="projects_title_item3"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
 													Механические и электрические работы</h4>
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
+												<h4 key="projects_subtitle_item3"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
 													на пароме “BAGTYYAR”</h4>
 
 											</div>
@@ -467,11 +510,11 @@
 										<div
 											class="w-100 custom-our-work-text px-5 py-2 d-flex align-items-end p-absolute bottom-0">
 											<div class="text-start p-relative z-index-2 mb-3">
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
+												<h4 key="projects_title_item4"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
 													Капитальный ремонт</h4>
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
+												<h4 key="projects_subtitle_item4"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
 													на пароме “BERKARAR”</h4>
 
 											</div>
@@ -487,11 +530,11 @@
 										<div
 											class="w-100 custom-our-work-text px-5 py-2 d-flex align-items-end p-absolute bottom-0">
 											<div class="text-start p-relative z-index-2 mb-3">
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
+												<h4 key="projects_title_item5"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
 													Механические и электрические работы</h4>
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
+												<h4 key="projects_subtitle_item5"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
 													на мототанкере “BITARAP”</h4>
 
 											</div>
@@ -507,11 +550,11 @@
 										<div
 											class="w-100 custom-our-work-text px-5 py-2 d-flex align-items-end p-absolute bottom-0">
 											<div class="text-start p-relative z-index-2 mb-3">
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
+												<h4 key="projects_title_item6"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-3">
 													Механические и электрические работы</h4>
-												<h4
-													class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
+												<h4 key="projects_subtitle_item6"
+													class="lang text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">
 													на буксире “ALEM”</h4>
 
 											</div>
@@ -525,27 +568,28 @@
 								<div data-plugin-sticky
 									data-plugin-options="{'minWidth': 991, 'containerSelector': '.sticky-container', 'padding': {'top': 100}}">
 									<div class="py-5 my-2 ps-5 pe-0">
-										<h4 class="text-color-light custom-text-10 font-weight-bold">
+										<h4 key="our_projects"
+											class="lang text-color-light custom-text-10 font-weight-bold">
 											Наши проекты</h4>
 										<ul class="list-unstyled sort-source" data-sort-id="portfolio"
 											data-option-key="filter">
 											<li class="nav-item active" data-option-value="*">
 												<a href="#ourWork" data-hash data-hash-offset="0"
-													data-hash-offset-lg="100"
-													class="our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Все
+													data-hash-offset-lg="100" key="projects_nav_see_all"
+													class="lang our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Все
 													проекты</a>
 											</li>
 											<li class="nav-item" data-option-value=".mechanical-electrical-works">
 												<a href="#ourWork" data-hash data-hash-offset="0"
-													data-hash-offset-lg="100"
-													class="our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Механические
+													data-hash-offset-lg="100" key="projects_nav_mechanical"
+													class="lang our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Механические
 													и электрические работы</a>
 											</li>
 
 											<li class="nav-item" data-option-value=".major-renovation">
 												<a href="#ourWork" data-hash data-hash-offset="0"
-													data-hash-offset-lg="100"
-													class="our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Капитальный
+													data-hash-offset-lg="100" key="projects_nav_overhaul"
+													class="lang our-work-text-color text-color-hover-light text-decoration-none mb-2 py-0 d-block">Капитальный
 													ремонт</a>
 											</li>
 
@@ -567,7 +611,8 @@
 					<div class="row mb-4">
 						<div class="col text-center">
 							<div class="overflow-hidden">
-								<h2 class="text-color-secondary font-weight-semi-bold text-6 line-height-1 mb-3-5 appear-animation"
+								<h2 key="reviews"
+									class="lang text-color-secondary font-weight-semi-bold text-6 line-height-1 mb-3-5 appear-animation"
 									data-appear-animation="maskUp" data-appear-animation-delay="300">Отзывы
 								</h2>
 							</div>
@@ -586,7 +631,9 @@
 												alt="">
 										</div>
 										<blockquote>
-											<p class="mb-0 custom-font-1 fst-italic text-4 line-height-7">ХО “Türkmen
+											<p key="review_text1"
+												class="lang mb-0 custom-font-1 fst-italic text-4 line-height-7">ХО
+												“Türkmen
 												Deňiz Hyzmatlary ” является нашим партнёром в области ремонта судовых
 												механизмов, главных двигателей, дизель-генераторов, винта-рулевых
 												комплексов и т.д в течение нескольких лет. В работе эта компания
@@ -594,7 +641,8 @@
 												Мы рекомендуем их, как надёжного и стабильного делового партнёра.</p>
 										</blockquote>
 										<div class="testimonial-author">
-											<p><strong class="font-weight-bold">Генеральный директор<br>АОЗТ
+											<p><strong key="review_from1" class="lang font-weight-bold">Генеральный
+													директор<br>АОЗТ
 													“Deňiz Söwda Floty”</strong></p>
 										</div>
 									</div>
@@ -607,7 +655,9 @@
 												alt="">
 										</div>
 										<blockquote>
-											<p class="mb-0 custom-font-1 fst-italic text-4 line-height-7">ХО “Türkmen
+											<p key="review_text2"
+												class="lang mb-0 custom-font-1 fst-italic text-4 line-height-7">ХО
+												“Türkmen
 												Deňiz Hyzmatlary ” наш постоянный партнёр в сфере судоремонтных работ с
 												2020 года. Стоить отметить техническую оснащенность этой компании,
 												которая обладает необходимыми техническими средствами, инструментарием
@@ -615,7 +665,8 @@
 												их качество.</p>
 										</blockquote>
 										<div class="testimonial-author">
-											<p><strong class="font-weight-bold">Директор ИП <br> “Beýik Ýüpek
+											<p><strong key="review_from2" class="lang font-weight-bold">Директор ИП <br>
+													“Beýik Ýüpek
 													Ýoly”</strong></p>
 										</div>
 									</div>
@@ -631,7 +682,8 @@
 					<div class="row mb-4">
 						<div class="col text-center">
 							<div class="overflow-hidden">
-								<h2 class="text-color-secondary font-weight-semi-bold text-6 line-height-1 mb-3-5 appear-animation"
+								<h2 key="our_partners"
+									class="lang text-color-secondary font-weight-semi-bold text-6 line-height-1 mb-3-5 appear-animation"
 									data-appear-animation="maskDown" data-appear-animation-delay="300">Наши партнёры
 								</h2>
 							</div>
@@ -672,15 +724,21 @@
 						<div class="row">
 							<div class="col-lg-7">
 								<div class="row py-5 my-5">
-									<div class="col-md-6">
-										<h2 class="font-weight-bold text-color-secondary text-6 text-lg-5 text-xl-6 mb-3 appear-animation"
+									<div class="col-12">
+										<h2 key="our_contacts"
+											class="lang font-weight-bold text-color-secondary text-6 text-lg-5 text-xl-6 mb-3 appear-animation"
 											data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
 											Наши Контакты</h2>
+									</div>
+									<div class="col-md-6">
 										<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 											data-appear-animation-delay="500">
-											<h3
-												class="font-weight-bold text-color-secondary text-transform-none text-4 text-lg-3 mb-0">
-												г. Ашхабад</h3>
+											<h3 key="city_address_title1"
+												class="lang font-weight-bold text-color-secondary text-transform-none text-4 text-lg-3 mb-0">
+												Головной офис</h3>
+											<p key="city_address1" class="lang">Детальный <br>Адрес <br>Ашхабад,
+												Туркменистан 744000</p>
+
 											<a href="tel:+99312223852"
 												class="d-inline-block text-color-default text-color-hover-primary text-decoration-none">+993
 												(12) 22-38-52</a>
@@ -688,42 +746,38 @@
 											<a href="tel:+99312223854"
 												class="d-inline-block text-color-default text-color-hover-primary text-decoration-none mb-4">+993
 												(12) 22-38-54</a>
+											<!-- <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+												data-appear-animation-delay="1300">
+											</div> -->
 										</div>
-										<div class="appear-animation" data-appear-animation="fadeInUpShorter"
-											data-appear-animation-delay="700">
-											<h3
-												class="font-weight-bold text-color-secondary text-transform-none text-4 text-lg-3 mb-0">
-												г. Туркменбаши</h3>
 
-											<a href="tel:+99312223852"
-												class="d-inline-block text-color-default text-color-hover-primary text-decoration-none mb-4">+993
-												(12) 22-38-52</a>
-										</div>
 										<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 											data-appear-animation-delay="900">
-											<h3
-												class="font-weight-bold text-color-secondary text-transform-none text-4 text-lg-3 mb-0">
+											<h3 key="work_time_title"
+												class="lang font-weight-bold text-color-secondary text-transform-none text-4 text-lg-3 mb-0">
 												Часы Работы</h3>
-											<p>Пн - Сб 09:00 - 18:00<br> Воскресенье - выходной</p>
+											<p key="work_time" class="lang">Пн - Сб 09:00 - 18:00</p>
+											<p key="work_day_off" class="lang">Воскресенье - выходной</p>
 										</div>
 									</div>
 									<div class="col-md-6">
-										<h2 class="font-weight-bold text-color-secondary text-6 text-lg-5 text-xl-6 mb-3 appear-animation"
-											data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100">
-											Адрес</h2>
+
+
 										<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 											data-appear-animation-delay="1300">
-											<h3
-												class="font-weight-bold text-color-secondary text-transform-none text-4 text-lg-3 mb-0">
-												Офис г. Ашхабад</h3>
-											<p>Детальный <br>Адрес <br>Ашхабад, Туркменистан 744000</p>
-										</div>
-										<div class="appear-animation" data-appear-animation="fadeInUpShorter"
-											data-appear-animation-delay="1300">
-											<h3
-												class="font-weight-bold text-color-secondary text-transform-none text-4 text-lg-3 mb-0">
+											<h3 key="city_address_title2"
+												class="lang font-weight-bold text-color-secondary text-transform-none text-4 text-lg-3 mb-0">
 												Офис г. Туркменбаши</h3>
-											<p>Детальный <br>Адрес <br>Туркменбаши, Туркменистан 745000</p>
+											<p key="city_address2" class="lang">Детальный <br>Адрес <br>Туркменбаши,
+												Туркменистан 745000</p>
+											<div class="appear-animation" data-appear-animation="fadeInUpShorter"
+												data-appear-animation-delay="700">
+
+												<a href="tel:+99312223852"
+													class="d-inline-block text-color-default text-color-hover-primary text-decoration-none mb-4">+993
+													(12) 22-38-52</a>
+
+											</div>
 										</div>
 										<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 											data-appear-animation-delay="1500">
@@ -738,7 +792,8 @@
 							</div>
 							<div class="col-lg-5 fluid-col-lg-5 p-0" data-appear-animation="fadeInUpShorter"
 								data-appear-animation-delay="1400">
-								<h3 class="text-color-secondary font-weight-bold text-transform-none line-height-2 text-8 mb-3 appear-animation"
+								<h3 key="send_us"
+									class="lang text-color-secondary font-weight-bold text-transform-none line-height-2 text-8 mb-3 appear-animation"
 									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">Напишите
 									нам</h3>
 
@@ -755,14 +810,14 @@
 
 									<div class="row row-gutter-sm">
 										<div class="form-group col-lg-6 mb-4">
-											<input type="text" value="" data-msg-required="Пожалуйста, введите Ваше имя."
-												maxlength="100" class="form-control" name="name" id="name" required
-												placeholder="Имя">
+											<input type="text" value=""
+												data-msg-required="Пожалуйста, введите Ваше имя." maxlength="100"
+												class="form-control" name="name" id="name" required placeholder="Имя">
 										</div>
 										<div class="form-group col-lg-6 mb-4">
 											<input type="text" value=""
-												data-msg-required="Пожалуйста введите ваш номер телефона." maxlength="100"
-												class="form-control" name="phone" id="phone" required
+												data-msg-required="Пожалуйста введите ваш номер телефона."
+												maxlength="100" class="form-control" name="phone" id="phone" required
 												placeholder="Номер телефона">
 										</div>
 									</div>
@@ -782,15 +837,16 @@
 									</div>
 									<div class="row">
 										<div class="form-group col mb-4">
-											<textarea maxlength="5000" data-msg-required="Пожалуйста, введите ваше сообщение."
-												rows="10" class="form-control" name="message" id="message" required
+											<textarea maxlength="5000"
+												data-msg-required="Пожалуйста, введите ваше сообщение." rows="10"
+												class="form-control" name="message" id="message" required
 												placeholder="Сообщение"></textarea>
 										</div>
 									</div>
 									<div class="row">
 										<div class="form-group col mb-0">
-											<button type="submit"
-												class="btn btn-primary btn-modern font-weight-bold text-3 px-5 py-3"
+											<button type="submit" key="send_button"
+												class="lang btn btn-primary btn-modern font-weight-bold text-3 px-5 py-3"
 												data-loading-text="Loading...">Отправить</button>
 										</div>
 									</div>
@@ -818,7 +874,8 @@
 				<div class="container py-2">
 					<div class="row py-4">
 						<div class="col d-flex align-items-center justify-content-center">
-							<p><strong>И.П. "Deniz Hyzmatlary"</strong> - © 2024. Все Права Защишены</p>
+							<p key="footer_privacy" class="lang"><strong>ХО "Deniz Hyzmatlary"</strong> - © 2024. Все
+								Права Защишены</p>
 						</div>
 					</div>
 				</div>
@@ -826,7 +883,9 @@
 		</footer>
 
 	</div>
-
+	<script>
+		function getCookie(e, t = !1) { if (!e) return; let n = document.cookie.match(new RegExp("(?:^|; )" + e.replace(/([.$?*|{}()\[\]\\\/+^])/g, "\\$1") + "=([^;]*)")); if (n) { let e = decodeURIComponent(n[1]); if (t) try { return JSON.parse(e) } catch (e) { } return e } } function setCookie(e, t, n = { path: "/" }) { if (!e) return; (n = n || {}).expires instanceof Date && (n.expires = n.expires.toUTCString()), t instanceof Object && (t = JSON.stringify(t)); let o = encodeURIComponent(e) + "=" + encodeURIComponent(t); for (let e in n) { o += "; " + e; let t = n[e]; !0 !== t && (o += "=" + t) } document.cookie = o } function deleteCookie(e) { setCookie(e, null, { expires: new Date, path: "/" }) }
+	</script>
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
 	<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -843,6 +902,7 @@
 	<script src="vendor/vivus/vivus.min.js"></script>
 	<script src="js/theme.js"></script>
 	<script src="js/views/view.contact.js"></script>
+	<script src="js/db.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/theme.init.js"></script>
 	<script src="js/examples/examples.portfolio.js"></script>

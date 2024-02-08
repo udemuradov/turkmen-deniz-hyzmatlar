@@ -25,3 +25,34 @@
         display: none;
     }
   }
+
+
+.nav-slash{
+	display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+	margin: 0 5px;
+	color: #FFFFFF !important;
+	text-transform: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+#header #nav-language{
+	display: flex;
+}
+#header #nav-language a{
+	color: #FFFFFF !important;
+	cursor: pointer;
+}
+#header #nav-language a:hover{
+	color: #393185 !important;
+}
+@media (max-width: 991px) {
+	.nav-slash{
+		display: none;	
+	}	
+	#header #nav-language{
+		display: none;	
+	}	
+}

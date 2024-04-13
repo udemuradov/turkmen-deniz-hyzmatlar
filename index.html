@@ -293,7 +293,7 @@
 						<div class="py-5">
 							<div
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
-								<img src="images/services/1.png" class="card-img-top border-radius-0" alt="services" />
+								<img src="images/services/1.jpg" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center px-3 pt-4 pb-1">
 									<h2 key="service_card_title1"
 										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
@@ -310,7 +310,7 @@
 						<div class="py-5">
 							<div
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
-								<img src="images/services/2.png" class="card-img-top border-radius-0" alt="services" />
+								<img src="images/services/2.jpg" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center pt-4 pb-1">
 									<h2 key="service_card_title2"
 										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
@@ -327,7 +327,7 @@
 						<div class="py-5">
 							<div
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
-								<img src="images/services/3.png" class="card-img-top border-radius-0" alt="services" />
+								<img src="images/services/3.jpg" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center pt-4 pb-1">
 									<h2 key="service_card_title3"
 										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
@@ -345,7 +345,7 @@
 						<div class="py-5">
 							<div
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
-								<img src="images/services/4.png" class="card-img-top border-radius-0" alt="services" />
+								<img src="images/services/4.jpg" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center pt-4 pb-1">
 									<h2 key="service_card_title4"
 										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
@@ -363,7 +363,7 @@
 						<div class="py-5">
 							<div
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
-								<img src="images/services/5.png" class="card-img-top border-radius-0" alt="services" />
+								<img src="images/services/5.jpg" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center pt-4 pb-1">
 									<h2 key="service_card_title5"
 										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
@@ -383,7 +383,7 @@
 						<div class="py-5">
 							<div
 								class="our-services-card-height card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
-								<img src="images/services/6.png" class="card-img-top border-radius-0" alt="services" />
+								<img src="images/services/6.jpg" class="card-img-top border-radius-0" alt="services" />
 								<div class="card-body text-center pt-4 pb-1">
 									<h2 key="service_card_title6"
 										class="lang card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-5 mb-3">
@@ -801,8 +801,9 @@
 									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">Напишите
 									нам</h3>
 
-								<form class="contact-form custom-form-style-1" action="php/contact-form.php"
-									method="POST">
+								<form class="contact-form custom-form-style-1" method="POST"
+									enctype="multipart/form-data" id="form" onsubmit="submitForm(event)"
+									action="vendor/php-mailer/send.php">
 									<div class="contact-form-success alert alert-success d-none mt-4">
 										<strong>Успешно!</strong> Ваше сообщение было отправлено нам.
 									</div>
